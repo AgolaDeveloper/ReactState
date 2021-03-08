@@ -12,10 +12,14 @@ class Emp extends Component
             profession: "Software Developer"
         }
     }
+    
  render (){
     return (
         <div>
+          
             <p> {this.state.name} is a {this.state.profession}, aged {this.state.age} </p>
+           <button id="btn">SUBSCRIBE</button>
+        
         </div>
     )
   }
