@@ -25,6 +25,9 @@ class Emp extends Component
  render (){
     return (
         <div>
+
+            <label>Enter message: </label>
+            <input onChange={this.changem}></input>
           
             <p> 
                 {this.state.name} is a {this.state.profession}, aged {this.state.age} 
