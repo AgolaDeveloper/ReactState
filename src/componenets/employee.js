@@ -12,13 +12,17 @@ class Emp extends Component
             profession: "Software Developer"
         }
     }
-    
+    // document.getElementById("btn").addEventListener("click", func);
+   func() {
+    this.setState({name: "Owino Tene"});
+
+    }
  render (){
     return (
         <div>
           
             <p> {this.state.name} is a {this.state.profession}, aged {this.state.age} </p>
-           <button id="btn">SUBSCRIBE</button>
+           <button onClick={this.func}>SUBSCRIBE</button>
         
         </div>
     )
