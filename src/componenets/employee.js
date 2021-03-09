@@ -9,19 +9,28 @@ class Emp extends Component
         this.state={
             name: "Agola",
             age: 23,
-            profession: "Software Developer"
+            profession: "Software Developer",
+            mess: " "
         }
+    };
+    
+   func=() => {
+    this.setState(
+        {name: "Owino Tene",
+        mess: "& thanks for subscribing! "
     }
-    // document.getElementById("btn").addEventListener("click", func);
-   func() {
-    this.setState({name: "Owino Tene"});
+    );
 
     }
  render (){
     return (
         <div>
           
-            <p> {this.state.name} is a {this.state.profession}, aged {this.state.age} </p>
+            <p> 
+                {this.state.name} is a {this.state.profession}, aged {this.state.age} 
+               <br/>
+                {this.state.mess}
+            </p>
            <button onClick={this.func}>SUBSCRIBE</button>
         
         </div>
