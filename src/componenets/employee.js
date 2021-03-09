@@ -17,10 +17,17 @@ class Emp extends Component
    func=() => {
     this.setState(
         {name: "Owino Tene",
-        mess: "& thanks for subscribing! "
+        mess: "& thanks for subscribing! ",
+        mes: ""
     }
     );
+ }
 
+    changem=(e)=>{
+        var text=e.target.value;
+        this.setState(
+            {mes:"Your message has " +text.length +" characters"}
+        );
     }
  render (){
     return (
@@ -35,6 +42,8 @@ class Emp extends Component
                 {this.state.mess}
             </p>
            <button onClick={this.func}>SUBSCRIBE</button>
+
+           <p>{this.state.mes}</p>
         
         </div>
     )
